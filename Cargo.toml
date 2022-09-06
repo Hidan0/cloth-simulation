@@ -1,0 +1,15 @@
+[package]
+name = "cloth-simulation"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.62"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = { version = "0.8.0", features = ["dynamic"] }
+bevy-inspector-egui = "0.12.1"
+bevy_prototype_debug_lines = "0.8.0"
+
+[profile.dev.package."*"]
+opt-level = 3
