@@ -4,7 +4,7 @@ use bevy_inspector_egui::Inspectable;
 const GRAVITY: Vec3 = Vec3::new(0., -400., 0.);
 const DRAG: f32 = 0.001;
 
-#[derive(Component, Inspectable)]
+#[derive(Component, Inspectable, Clone)]
 pub struct VerletPoint {
     pub(crate) prev_pos: Option<Vec3>,
     pub(crate) mass: f32,

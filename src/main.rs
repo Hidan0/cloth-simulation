@@ -42,8 +42,8 @@ fn spawn_camera(mut cmds: Commands) {
 fn spawn_dot(mut cmds: Commands) {
     let start_pos = Vec3::new(-500., 300., 0.);
     let mass = 9.5;
-    let spacing = 5.;
-    let lenght = 5.;
+    let spacing = 6.;
+    let lenght = 6.;
     let width = 160;
     let height = 80;
 
